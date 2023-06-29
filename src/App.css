@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #0B2434;
+  font-family: 'Karla', sans-serif;
+}
+
+.App {
+  background-color: #F5F5F5;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 70%;
+  border-radius: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.die-div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+}
+
+.dice-comp {
+  color: #F5F5F5;
+  padding: .5em 1em;
+  border-radius: .2em;
+  background-color: #7d8597;
+  box-shadow: 0px 3px 3px #33415c;
+  cursor: pointer;
+}
+
+.instructions {
+  margin-bottom: 1em;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
